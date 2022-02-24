@@ -9,6 +9,8 @@ import Button from './Button'
 import Input from './Input'
 import Container from './Container'
 import State from './State'
+import ClassCompo from './ClassCompo'
+import Compo from './Compo'
 
 function Home() {
   const MemberInfo = {
@@ -51,6 +53,8 @@ function Home() {
       <Input value='' handleChange={(event) => console.log(event)} /> <br />
       <Container styles={{border: '1px solid black', padding: '0.5em', width: '20%', color: 'red'}} /> <br />
       <State />
+      <ClassCompo message={'Count is: '} />
+      <Compo isCompo={true} Component={Demo} />
     </div>
   )
 }
